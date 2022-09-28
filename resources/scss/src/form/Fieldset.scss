@@ -1,0 +1,39 @@
+.neo-fieldset {
+    background-color: v(fieldset-background-color);
+    border          : v(fieldset-border);
+
+    &.neo-collapsed {
+        background-color: inherit;
+        border-bottom   : none;
+        border-left     : none;
+        border-right    : none;
+        padding         : 0 0 0 0.75em;
+
+        .neo-legend {
+            .neo-legend-icon {
+                font-weight: 300;
+            }
+        }
+    }
+
+    &.neo-collapsible {
+        .neo-legend {
+            cursor: pointer;
+        }
+    }
+
+    .neo-legend {
+        color        : v(fieldset-legend-color);
+        cursor       : default;
+        font-weight  : 500;
+        padding-right: 0.1em;
+        user-select  : none;
+
+        .neo-legend-icon {
+            color       : v(fieldset-legend-icon-color);
+            font-weight : 600;
+            margin-left : 0.1em;
+            margin-right: 0.3em;
+        }
+    }
+}

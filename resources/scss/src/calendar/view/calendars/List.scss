@@ -1,0 +1,98 @@
+.neo-calendars-list {
+    .neo-checkboxfield {
+        align-items: center;
+        display    : flex;
+
+        .neo-checkbox-input {
+            &:checked {
+                &::after {
+                    content    : "\f14a";
+                    font-weight: 600;
+                }
+            }
+
+            &::after {
+                content    : "\f0c8";
+                font-size  : 20px;
+                font-weight: 600;
+                transition : color .15s ease-out;
+            }
+        }
+
+        .neo-checkbox-value-label {
+            cursor: pointer;
+        }
+    }
+
+    .neo-color-blue {
+        .neo-checkbox-input {
+            &::after {
+                color: v(event-blue-color) !important;
+            }
+        }
+    }
+
+    .neo-color-green {
+        .neo-checkbox-input {
+            &::after {
+                color: v(event-green-color) !important;
+            }
+        }
+    }
+
+    .neo-color-orange {
+        .neo-checkbox-input {
+            &::after {
+                color: v(event-orange-color) !important;
+            }
+        }
+    }
+
+    .neo-color-pink {
+        .neo-checkbox-input {
+            &::after {
+                color: v(event-pink-color) !important;
+            }
+        }
+    }
+
+    .neo-color-red {
+        .neo-checkbox-input {
+            &::after {
+                color: v(event-red-color) !important;
+            }
+        }
+    }
+
+    .neo-color-yellow {
+        .neo-checkbox-input {
+            &::after {
+                color: v(event-yellow-border-color) !important;
+            }
+        }
+    }
+
+    .neo-list-item {
+        align-items     : center;
+        background-color: transparent;
+        display         : flex;
+        padding         : 0;
+
+        &:hover {
+            .neo-edit-icon {
+                opacity: 1;
+            }
+        }
+
+        .neo-edit-icon {
+            color       : v(calendars-list-edit-icon-color);
+            font-size   : 16px;
+            font-weight : 600;
+            height      : 1em;
+            margin-left : auto;
+            margin-right: 4px;
+            opacity     : 0;
+            width       : 1em;
+        }
+    }
+}

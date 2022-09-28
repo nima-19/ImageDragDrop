@@ -1,0 +1,17 @@
+{
+    "apps": [
+        "Covid",
+        "Docs",
+        "Krausest",
+        "RealWorld",
+        "RealWorld2",
+        "SharedCovid",
+        "SharedCovidChart",
+        "SharedCovidGallery",
+        "SharedCovidHelix",
+        "SharedCovidMap",
+        "SharedDialog",
+        "SharedDialog2",
+        "Website"
+    ]
+}

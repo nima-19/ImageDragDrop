@@ -1,0 +1,201 @@
+.neo-calendar-maincontainer {
+    .neo-calendar-header-toolbar {
+        border-bottom: 1px solid v(calendar-border-color);
+
+        &.neo-left {
+            padding-right: 0;
+        }
+    }
+
+    .neo-calendar-sidebar {
+        border-right: 1px solid v(calendar-border-color);
+        transition  : margin-left 350ms ease-out;
+    }
+
+    .neo-dateselector {
+        .neo-dateselector-content {
+            border-right: 0;
+        }
+
+        .neo-dateselector-header {
+            border-right: 0;
+            border-top  : 0;
+        }
+    }
+}
+
+.neo-button {
+    &.neo-red {
+        &:hover {
+            border-color: red;
+        }
+
+        .neo-button-glyph {
+            color: red;
+        }
+
+        .neo-button-text {
+            color: red;
+        }
+    }
+}
+
+.neo-event {
+    transition:
+        background-color .15s ease-out,
+        border-color     .15s ease-out,
+        color            .15s ease-out;
+
+    &.neo-blue {
+        background-color: v(event-blue-background-color);
+        border-left     : 2px solid v(event-blue-color);
+        color           : v(event-blue-color);
+
+        &.neo-focus {
+            background-color: v(event-blue-background-color-focus);
+        }
+
+        .neo-resizable {
+            color: v(event-blue-color);
+        }
+    }
+
+    &.neo-green {
+        background-color: v(event-green-background-color);
+        border-left     : 2px solid v(event-green-color);
+        color           : v(event-green-color);
+
+        &.neo-focus {
+            background-color: v(event-green-background-color-focus);
+        }
+
+        .neo-resizable {
+            color: v(event-green-color);
+        }
+    }
+
+    &.neo-orange {
+        background-color: v(event-orange-background-color);
+        border-left     : 2px solid v(event-orange-color);
+        color           : v(event-orange-color);
+
+        &.neo-focus {
+            background-color: v(event-orange-background-color-focus);
+        }
+
+        .neo-resizable {
+            color: v(event-orange-color);
+        }
+    }
+
+    &.neo-pink {
+        background-color: v(event-pink-background-color);
+        border-left     : 2px solid v(event-pink-color);
+        color           : v(event-pink-color);
+
+        &.neo-focus {
+            background-color: v(event-pink-background-color-focus);
+        }
+
+        .neo-resizable {
+            color: v(event-pink-color);
+        }
+    }
+
+    &.neo-red {
+        background-color: v(event-red-background-color);
+        border-left     : 2px solid v(event-red-color);
+        color           : v(event-red-color);
+
+        &.neo-focus {
+            background-color: v(event-red-background-color-focus);
+        }
+
+        .neo-resizable {
+            color: v(event-red-color);
+        }
+    }
+
+    &.neo-yellow {
+        background-color: v(event-yellow-background-color);
+        border-left     : 2px solid v(event-yellow-border-color);
+        color           : v(event-yellow-color);
+
+        &.neo-focus {
+            background-color: v(event-yellow-background-color-focus);
+            color           : v(event-yellow-color-focus) !important;
+
+            .neo-resizable {
+                color: v(event-yellow-color-focus) !important;
+            }
+        }
+
+        .neo-resizable {
+            color: v(event-yellow-color);
+        }
+    }
+}
+
+.neo-event-border-all-sides {
+    .neo-event {
+        border-radius: 3px;
+
+        &.neo-blue {
+            border: 1px solid v(event-blue-color);
+        }
+
+        &.neo-green {
+            border: 1px solid v(event-green-color);
+        }
+
+        &.neo-orange {
+            border: 1px solid v(event-orange-color);
+        }
+
+        &.neo-pink {
+            border: 1px solid v(event-pink-color);
+        }
+
+        &.neo-red {
+            border: 1px solid v(event-red-color);
+        }
+
+        &.neo-yellow {
+            border: 1px solid v(event-yellow-border-color);
+        }
+    }
+}
+
+.neo-event-border-right {
+    .neo-event {
+        &.neo-blue {
+            border-left : 0;
+            border-right: 2px solid v(event-blue-color);
+        }
+
+        &.neo-green {
+            border-left : 0;
+            border-right: 2px solid v(event-green-color);
+        }
+
+        &.neo-orange {
+            border-left : 0;
+            border-right: 2px solid v(event-orange-color);
+        }
+
+        &.neo-pink {
+            border-left : 0;
+            border-right: 2px solid v(event-pink-color);
+        }
+
+        &.neo-red {
+            border-left : 0;
+            border-right: 2px solid v(event-red-color);
+        }
+
+        &.neo-yellow {
+            border-left : 0;
+            border-right: 2px solid v(event-yellow-border-color);
+        }
+    }
+}
